@@ -5,10 +5,12 @@ import * as actions from '../actions/bookAction';
 
 class BookCategories extends Component {
 
-    componentDidMount() {
+    componentDidMount()
+    {
         this.props.fetchCategories();
     }
-    render() {
+    render() 
+    {
         const { categories } = this.props;
         return (
             
