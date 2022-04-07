@@ -1,4 +1,4 @@
-const connection = require('../models/dbconnection');
+const connection = require('../models/dbConnection');
 
 module.exports = {
     getBooks: async (req, res, next) => {

@@ -1,5 +1,5 @@
 const JWT = require('jsonwebtoken');
-const connection = require('../models/dbconnection');
+const connection = require('../models/dbConnection');
 const { uuid } = require('uuidv4');
 const dotenv = require('dotenv');
 dotenv.config();
