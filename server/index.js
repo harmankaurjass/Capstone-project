@@ -6,7 +6,8 @@ const path = require('path')
 
 const app = express();
 
-const env = process.env.NODE_ENV || 'development';
+//const env = process.env.NODE_ENV || 'development';
+const env = 'production';
 console.log('env is ', env);
 
 

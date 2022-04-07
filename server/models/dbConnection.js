@@ -13,6 +13,7 @@ const connection = mysql.createPool({
 try {
      connection.getConnection(function (err) {
          if (err) {
+            console.log(err);
             console.error('error connecting to DB');
             return;
         }

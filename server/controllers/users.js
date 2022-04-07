@@ -6,8 +6,6 @@ dotenv.config();
 
 const stripe = require('stripe')(process.env.STRIPE_SC_KEY);
 
-
-
 signToken = user => {
     return JWT.sign({
         iss: 'harman',

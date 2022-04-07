@@ -19,7 +19,7 @@ export const checkAuth = () => {
         try {
             const token = localStorage.getItem('JWT_TOKEN');
             if (token) {
-                await axios.get('/users/status', {
+                await axios.get('http://3.92.68.55:5000/users/status', {
                     headers: {
                         'Authorization': `${token}`
                     }
@@ -43,7 +43,7 @@ export const checkAuth = () => {
 export const oauthGoogle = data => {
     return async dispatch => {
         try {
-            const res = await axios.post('/users/oauth/google', {
+            const res = await axios.post('http://3.92.68.55:5000/users/oauth/google', {
                 access_token: data
             });
             localStorage.setItem('JWT_TOKEN', res.data.token);

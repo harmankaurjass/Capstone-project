@@ -6,7 +6,7 @@ export const searchBooks = (searchData) => {
     return async dispatch => {
         try {
             //console.log('in searchbooks actions ', searchData);
-            axios.get('/books/searchbooks', {
+            axios.get('http://3.92.68.55:5000/books/searchbooks', {
                 params: {
                     searchData: searchData
                 }
@@ -30,7 +30,7 @@ export const searchBooks = (searchData) => {
 export const searchBooksInfo = (id) => {
     return async dispatch => {
         try {
-            axios.get('/books/getBookInfo', {
+            axios.get('http://3.92.68.55:5000/books/getBookInfo', {
                 params: {
                     id: id
                 }

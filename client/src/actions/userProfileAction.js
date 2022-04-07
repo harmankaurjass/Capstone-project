@@ -5,7 +5,7 @@ import axios from 'axios';
 export const fetchUserProfile = (id) => {
     return async dispatch => {
         try {
-            const res = await axios.post('/users/userprofile', {
+            const res = await axios.post('http://3.92.68.55:5000/users/userprofile', {
                 "id": id
             })
             dispatch({
@@ -22,7 +22,7 @@ export const fetchUserProfile = (id) => {
 export const editUserProfile = (user) => {
     return async dispatch => {
         try {
-            const res = await axios.post('/users/editprofile', {
+            const res = await axios.post('http://3.92.68.55:5000/users/editprofile', {
                 "user": user
             })
             dispatch({
